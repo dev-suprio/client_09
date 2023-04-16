@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National day celebration</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <style>
+        body {
+            margin: 5px;
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+        .line {
+            border-bottom: 2px solid black;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5vh;
+        }
+
+        /* Style the button */
+        button {
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="img"></div> -->
+    <img class="img" src="logo.jpg" alt="Your Image">
+    <p style="font-weight: bold;">Below is a survey on national day celebration. Please take a few moments to complete
+        this questionnaire.</p>
+    <div class="line"></div>
+    <form>
+        <label style="font-weight: bold;" for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label style="font-weight: bold;" for="lname">Email address:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+
+        <label style="font-weight: bold;" for="lname">Your gender:</label><br>
+        <input type="radio" id="male" name="fav_language" value="male">
+        <label for="html">Male</label>
+        <input type="radio" id="female" name="fav_language" value="female">
+        <label for="html">Female</label><br>
+
+        <label style="font-weight: bold;" for="fname">Age:</label><br>
+        <input type="text" id="age" name="age"><br>
+        <div class="line"></div>
+        <label style="font-weight: bold;" for="fname">Which region in the kindom are you from:</label><br>
+        <select name="region">
+            <option selected="selected">- Select -</option>
+            <option value="RYD">Al-riyadh</option>
+            <option value="MKM">Makkah al-Mukarramah</option>
+            <option value="MDM">Al-Madinah al-Munawwarah</option>
+            <option value="QSM">Al-Qasim</option>
+            <option value="SHQ">Ash-Sharqiyah</option>
+            <option value="ASI">Asir </option>
+            <option value="TBK">Tabouk</option>
+            <option value="HAL">Ha'il</option>
+            <option value="HDS">Al-Hudud ash-Shamaliyah</option>
+            <option value="JIZ">Jizan</option>
+            <option value="NJR">Najran</option>
+            <option value="BAH">Al-Bahah</option>
+            <option value="JWF">Al-Jawf</option>
+        </select><br>
+
+        <div class="line"></div>
+
+
+        <label style="font-weight: bold;" for="fname">Which of the following would you consider to celebrate the
+            national day:</label><br><br>
+        <input type="checkbox" id="day1" name="day1" value="value1">
+        <label for="vehicle1"> Family Gathering</label><br>
+        <input type="checkbox" id="day2" name="day2" value="value2">
+        <label for="vehicle2"> Fireworks Show</label><br>
+        <input type="checkbox" id="day3" name="day3" value="value3">
+        <label for="vehicle3"> Sport Events</label><br>
+        <input type="checkbox" id="day4" name="day4" value="value4">
+        <label for="vehicle1"> Dress In National Colors</label><br>
+        <input type="checkbox" id="day5" name="day5" value="value5">
+        <label for="vehicle2"> Festival Parade</label><br>
+        <input type="checkbox" id="day6" name="day6" value="value6">
+        <label for="vehicle3"> Others</label><br>
+
+        <div class="line"></div>
+
+        <label style="font-weight: bold;" for="lname">Would you be intrested to participate in organizing events for the
+            national day celebration:</label><br><br>
+        <input type="radio" id="definitely" name="fav_language" value="definitely">
+        <label for="html">Definitely</label>
+        <input type="radio" id="probably" name="fav_language" value="probably">
+        <label for="html">Probably</label>
+        <input type="radio" id="probably_not" name="fav_language" value="probably_not">
+        <label for="html">Probably not</label>
+        <input type="radio" id="definitely_not" name="fav_language" value="definitely_not">
+        <label for="html">Definitely not</label>
+        <input type="radio" id="unsure" name="fav_language" value="unsure">
+        <label for="html">Unsure</label><br>
+
+        <div class="line"></div>
+
+        <label style="font-weight: bold;" for="fname">What are your wishes and expectations, What do you want to say to
+            the country on this national day?</label><br><br>
+        <textarea name="message" rows="20" cols="150">
+        </textarea><br>
+        <div class="line"></div><br>
+        <div class="center">
+            <button>Submit</button>
+            <button>Start over</button>
+        </div>
+    </form>
+</body>
+<footer style="text-align: center;">
+    <p>Design By <a href="https://supriopramanik.github.io/portfolio/">Suprio</a> </p>
+</footer>
+</html>
